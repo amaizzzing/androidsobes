@@ -63,6 +63,8 @@ object Dependencies{
         const val androidGradle = "com.android.tools.build:gradle:$androidGradleVersion"
         const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         const val googleServicesMaps = "com.google.android.gms:play-services-maps:18.0.0"
+        const val googleServicesLocation = "com.google.android.gms:play-services-location:18.0.0"
+        const val googleServicesPlaces = "com.google.android.libraries.places:places-compat:2.4.0"
     }
     object SupportLibs {
         const val appcompat = "androidx.appcompat:appcompat:$appcompatVersion"

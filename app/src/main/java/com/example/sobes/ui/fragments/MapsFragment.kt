@@ -115,17 +115,20 @@ class MapsFragment:
             onCreate(savedInstanceState)
             onResume()
             getMapAsync { gMap ->
-                googleMapsService.setMap(gMap)
-                googleMapsService.configMap(
-                    {
-                        AddMarkerDialog.newInstance(it.latitude, it.longitude)
-                            .show(childFragmentManager, ADD_MARKER_DIALOG_TAG)
-                    },
-                    {
-                        AddMarkerDialog.newInstance(it.position.latitude, it.position.longitude)
-                            .show(childFragmentManager, ADD_MARKER_DIALOG_TAG)
-                    }
-                )
+                with(googleMapsService) {
+                    setMap(gMap)
+                    setMyLocationEnabled()
+                    configMap(
+                        {
+                            AddMarkerDialog.newInstance(it.latitude, it.longitude)
+                                .show(childFragmentManager, ADD_MARKER_DIALOG_TAG)
+                        },
+                        {
+                            AddMarkerDialog.newInstance(it.position.latitude, it.position.longitude)
+                                .show(childFragmentManager, ADD_MARKER_DIALOG_TAG)
+                        }
+                    )
+                }
             }
         }
     }

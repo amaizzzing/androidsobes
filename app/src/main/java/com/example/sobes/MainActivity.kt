@@ -19,24 +19,21 @@ class MainActivity : AppCompatActivity() {
 
     private val locationPermissionRequest =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             when {
-                permissions.getOrDefault(Manifest.permission.ACCESS_FINE_LOCATION, false) ||
-                permissions.getOrDefault(Manifest.permission.ACCESS_COARSE_LOCATION, false) -> {
+                permissions[Manifest.permission.ACCESS_FINE_LOCATION] == true ||
+                permissions[Manifest.permission.ACCESS_COARSE_LOCATION] == true -> {
+                    initNavigation()
                     navController.navigate(R.id.navigation_map)
                 } else -> {
                     Toast.makeText(this, "ERROR PERMISSIONS", Toast.LENGTH_LONG).show()
                 }
             }
-        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding?.root)
-
-        initNavigation()
 
         locationPermissionRequest.launch(
             arrayOf(
@@ -51,6 +48,9 @@ class MainActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main) as NavHostFragment
         navController = navHostFragment.navController
+
+        val navGraph = navController.navInflater.inflate(R.navigation.mobile_navigation)
+        navController.graph = navGraph
 
         activityMainBinding?.let { binding ->
             navView?.setupWithNavController(navController)

@@ -25,5 +25,7 @@ interface IMapsService {
         onInfoWindowClick: (marker: Marker) -> Unit
     )
 
+    fun setMyLocationEnabled()
+
     fun clearMap()
 }

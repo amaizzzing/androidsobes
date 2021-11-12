@@ -64,14 +64,13 @@ class GoogleMapsService: IMapsService {
 
     private fun getMarker(key: String): Marker? = markerHashMap[key]
 
-    @SuppressLint("MissingPermission")
+
     override fun configMap(
         onMapClick: (latLon: LatLng) -> Unit,
         onInfoWindowClick: (marker: Marker) -> Unit
     ) {
         googleMap?.let { gMap ->
             gMap.mapType = GoogleMap.MAP_TYPE_NORMAL
-            gMap.isMyLocationEnabled = true
             with(gMap.uiSettings) {
                 isZoomControlsEnabled = true
                 isMyLocationButtonEnabled = true
@@ -84,6 +83,11 @@ class GoogleMapsService: IMapsService {
                 onInfoWindowClick.invoke(it)
             }
         }
+    }
+
+    @SuppressLint("MissingPermission")
+    override fun setMyLocationEnabled() {
+        googleMap?.isMyLocationEnabled = true
     }
 
     override fun clearMap() {

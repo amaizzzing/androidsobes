@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_top_rated">
+
+    <fragment
+        android:id="@+id/navigation_top_rated"
+        android:name="com.example.sobes.lesson2.ui.fragments.TopRatedFragment"
+        android:label="Top Movies"
+        tools:layout="@layout/fragment_top_rated">
+        <action
+            android:id="@+id/action_topmovie_to_movie"
+            app:destination="@id/navigation_movie"
+            app:enterAnim="@anim/fade_in_anim"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_movie"
+        android:name="com.example.sobes.lesson2.ui.fragments.MovieFragment"
+        android:label="Movie"
+        tools:layout="@layout/fragment_movie">
+        <action
+            android:id="@+id/action_movie_to_topmovie"
+            app:destination="@id/navigation_top_rated"
+            app:enterAnim="@anim/fade_in_anim"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+</navigation>

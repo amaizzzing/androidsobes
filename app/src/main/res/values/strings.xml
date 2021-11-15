@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">sobes</string>
+    <string name="overview_title_movie">Описание</string>
+    <string name="acters_movie">Актеры</string>
+
+    <string name="released_text">Дата выхода: %1$s</string>
+    <string name="duration_text">%1$s мин.</string>
+    <string name="search_movie_hint">Найти фильм…</string>
+    <string name="top_movies_text">Топ фильмов</string>
+    <string name="find_movies_text">Найденные фильмы</string>
 </resources>

@@ -44,6 +44,9 @@ private const val joda_time_version = "2.10.10"
 //worker service
 private const val worker_version = "2.7.0-beta01"
 
+//paging
+private const val paging_version = "3.1.0-rc01"
+
 object Dependencies{
     object Android {
         const val minSdkVersion = 21
@@ -114,5 +117,8 @@ object Dependencies{
         const val workRuntimeKtx = "androidx.work:work-runtime-ktx:$worker_version"
         const val workGcm = "androidx.work:work-gcm:$worker_version"
         const val workMultiprocess = "androidx.work:work-multiprocess:$worker_version"
+    }
+    object Paging {
+        const val  pagingRuntime = "androidx.paging:paging-runtime:$paging_version"
     }
 }

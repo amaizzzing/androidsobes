@@ -13,4 +13,29 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="dialog_add_marker_latlon_textstyle">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="note_name_dialog_style">
+        <item name="android:gravity">top|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">#FFFFFFFF</item>
+    </style>
+
+    <style name="note_text_dialog_style">
+        <item name="android:gravity">top|left</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:background">#FFFFFFFF</item>
+    </style>
+
+    <style name="progress_bar_style">
+        <item name="android:layout_width">@dimen/progress_bar_size</item>
+        <item name="android:layout_height">@dimen/progress_bar_size</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
 </resources>

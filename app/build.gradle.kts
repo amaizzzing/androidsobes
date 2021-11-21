@@ -68,6 +68,8 @@ dependencies {
         implementation(Dependencies.Worker.workMultiprocess)
         implementation(Dependencies.Worker.workRuntimeKtx)
         implementation(Dependencies.BuildPlugins.googleServicesMaps)
+        implementation(Dependencies.BuildPlugins.googleServicesLocation)
+        implementation(Dependencies.BuildPlugins.googleServicesPlaces)
 
         kapt(Dependencies.Room.roomCompiler)
         kapt(Dependencies.Dagger.daggerCompiler)

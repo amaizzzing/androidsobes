@@ -8,4 +8,14 @@
     <string name="search_movie_hint">Найти фильм…</string>
     <string name="top_movies_text">Топ фильмов</string>
     <string name="find_movies_text">Найденные фильмы</string>
+    <string name="dialog_cancel_text">Отмена</string>
+    <string name="dialog_ok_text">Сохранить</string>
+
+    <string name="lat_dialog_text">lat: %1$f</string>
+    <string name="lon_dialog_text">lon: %1$f</string>
+    <string name="dialog_note_hint_text">Введите текст…</string>
+    <string name="bottom_menu_map">Карта</string>
+    <string name="bottom_menu_notes">Заметки</string>
+    <string name="note_name_dialog_hint">Введите название…</string>
+    <string name="error_dialog_name">"Необходимо ввести название!"</string>
 </resources>

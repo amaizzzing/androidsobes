@@ -76,6 +76,8 @@ dependencies {
         implementation(Dependencies.BuildPlugins.googleServicesMaps)
         implementation(Dependencies.Paging.pagingRuntime)
         implementation("com.squareup.okhttp3:logging-interceptor:3.9.0")
+        implementation(Dependencies.BuildPlugins.googleServicesLocation)
+        implementation(Dependencies.BuildPlugins.googleServicesPlaces)
 
         kapt(Dependencies.Room.roomCompiler)
         kapt(Dependencies.Dagger.daggerCompiler)

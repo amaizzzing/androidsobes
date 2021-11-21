@@ -5,18 +5,19 @@
       <map>
         <entry key="app/src/main/res/drawable/round_corners.xml" value="0.22685185185185186" />
         <entry key="app/src/main/res/drawable/round_corners_note_item.xml" value="0.22685185185185186" />
-        <entry key="app/src/main/res/layout/activity_film.xml" value="0.1339918946301925" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1644021739130435" />
         <entry key="app/src/main/res/layout/activity_movie.xml" value="0.1347517730496454" />
         <entry key="app/src/main/res/layout/actors_item.xml" value="0.14159067882472137" />
         <entry key="app/src/main/res/layout/dialog_add_marker.xml" value="0.151268115942029" />
-        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.15579710144927536" />
         <entry key="app/src/main/res/layout/fragment_movie.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_movie_layout.xml" value="0.12454710144927536" />
-        <entry key="app/src/main/res/layout/fragment_notes.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/fragment_top_rated.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/notes_item.xml" value="0.1" />
         <entry key="app/src/main/res/layout/top_movie_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1644021739130435" />
+        <entry key="app/src/main/res/layout/dialog_add_marker.xml" value="0.151268115942029" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.15579710144927536" />
+        <entry key="app/src/main/res/layout/fragment_notes.xml" value="0.13541666666666666" />
+        <entry key="app/src/main/res/layout/notes_item.xml" value="0.1" />
       </map>
     </option>
   </component>

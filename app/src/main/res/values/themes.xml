@@ -14,6 +14,51 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="text_top_rated_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_32</item>
+        <item name="android:shadowColor">@color/grey</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+    <style name="title_movie_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_34</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="info_movie_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="overview_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_18</item>
+    </style>
+    <style name="name_top_movie_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_18</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="date_top_movie_style">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+    <style name="overview_movie_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+    <style name="actors_movie_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_18</item>
     <style name="dialog_add_marker_latlon_textstyle">
         <item name="android:textSize">@dimen/text_size_18</item>
         <item name="android:textColor">@color/black</item>

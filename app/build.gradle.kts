@@ -17,6 +17,12 @@ android {
         versionCode = Dependencies.Android.versionCode
         versionName = Dependencies.Android.versionName
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField(
+            "String",
+            "API_KEY",
+            project.property("API_KEY").toString()
+        )
     }
 
     buildTypes {
@@ -68,6 +74,8 @@ dependencies {
         implementation(Dependencies.Worker.workMultiprocess)
         implementation(Dependencies.Worker.workRuntimeKtx)
         implementation(Dependencies.BuildPlugins.googleServicesMaps)
+        implementation(Dependencies.Paging.pagingRuntime)
+        implementation("com.squareup.okhttp3:logging-interceptor:3.9.0")
         implementation(Dependencies.BuildPlugins.googleServicesLocation)
         implementation(Dependencies.BuildPlugins.googleServicesPlaces)
 
